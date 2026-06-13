@@ -574,14 +574,7 @@ h3 {
 }
 
 .motion-ready .hero > *,
-.motion-ready .page-header,
-.motion-ready .section,
-.motion-ready .card,
-.motion-ready .step-card,
-.motion-ready .screen-card,
-.motion-ready .faq details,
-.motion-ready .contact-note,
-.motion-ready .contact-box {
+.motion-ready .reveal-pending {
     opacity: 0;
     transform: translateY(22px) scale(0.985);
 }
