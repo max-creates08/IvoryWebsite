@@ -27,6 +27,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
     line-height: 1.6;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 a {
@@ -340,9 +341,24 @@ h3 {
     gap: 18px;
 }
 
+/* Tablet + phone layout */
 @media (max-width: 760px) {
+    .shell {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
     .hero {
         padding-top: 72px;
+        padding-bottom: 56px;
+    }
+
+    h1 {
+        font-size: clamp(2.65rem, 14vw, 4rem);
+    }
+
+    .lede {
+        font-size: 1.05rem;
     }
 
     .grid {
@@ -351,6 +367,13 @@ h3 {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .card,
+    .document section,
+    .faq details,
+    .contact-box {
+        padding: 24px;
     }
 
     .nav {
@@ -371,6 +394,34 @@ h3 {
         align-items: flex-start;
         flex-direction: column;
         gap: 12px;
+    }
+}
+
+/* Smaller iPhones */
+@media (max-width: 390px) {
+    .shell {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .actions {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: clamp(2.35rem, 13vw, 3.4rem);
+    }
+
+    .card,
+    .document section,
+    .faq details,
+    .contact-box {
+        padding: 22px;
     }
 }
 
