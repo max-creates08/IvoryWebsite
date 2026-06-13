@@ -4,12 +4,25 @@ if (!reduceMotion) {
     document.documentElement.classList.add("motion-ready");
 
     const revealItems = document.querySelectorAll(
-        ".section, .page-header, .card, .step-card, .screen-card, .faq details, .contact-note, .contact-box"
+        [
+            ".section-heading",
+            ".theme-panel",
+            ".phone-shot",
+            ".watch-shot",
+            ".step-card",
+            ".card",
+            ".screen-card",
+            ".privacy-proof span",
+            ".page-header",
+            ".document section",
+            ".faq details",
+            ".contact-note",
+            ".contact-box"
+        ].join(", ")
     );
 
-    revealItems.forEach((item, index) => {
+    revealItems.forEach((item) => {
         item.classList.add("reveal-pending");
-        item.style.setProperty("--reveal-delay", `${Math.min(index * 45, 260)}ms`);
     });
 
     const showItem = (item) => {
@@ -22,28 +35,24 @@ if (!reduceMotion) {
     } else {
         const observer = new IntersectionObserver(
             (entries) => {
-                for (const entry of entries) {
-                    if (entry.isIntersecting) {
+                entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+                    .forEach((entry, index) => {
+                        entry.target.style.setProperty(
+                            "--reveal-delay",
+                            `${Math.min(index * 85, 340)}ms`
+                        );
                         showItem(entry.target);
                         observer.unobserve(entry.target);
-                    }
-                }
+                    });
             },
             {
-                rootMargin: "0px 0px -12% 0px",
-                threshold: 0.12
+                rootMargin: "0px 0px -8% 0px",
+                threshold: 0.16
             }
         );
 
         revealItems.forEach((item) => observer.observe(item));
-
-        window.setTimeout(() => {
-            revealItems.forEach((item) => {
-                if (!item.classList.contains("is-visible")) {
-                    showItem(item);
-                    observer.unobserve(item);
-                }
-            });
-        }, 900);
     }
 }

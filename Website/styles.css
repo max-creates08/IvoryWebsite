@@ -745,11 +745,12 @@ h3 {
 .motion-ready .hero > *,
 .motion-ready .reveal-pending {
     opacity: 0;
-    transform: translateY(22px) scale(0.985);
+    transform: translateY(38px) scale(0.982);
+    will-change: opacity, transform;
 }
 
 .motion-ready .hero > * {
-    animation: pageRise 720ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    animation: pageRise 860ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 .motion-ready .hero > *:nth-child(2) {
@@ -768,8 +769,18 @@ h3 {
     opacity: 1;
     transform: translateY(0) scale(1);
     transition:
-        opacity 720ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--reveal-delay),
-        transform 720ms cubic-bezier(0.2, 0.8, 0.2, 1) var(--reveal-delay);
+        opacity 920ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms),
+        transform 920ms cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0ms);
+    will-change: auto;
+}
+
+.motion-ready .phone-shot.reveal-pending,
+.motion-ready .watch-shot.reveal-pending {
+    transform: translateY(54px) scale(0.965);
+}
+
+.motion-ready .theme-panel.reveal-pending {
+    transform: translateY(44px) scale(0.975);
 }
 
 .motion-ready .card.is-visible:hover,
@@ -783,7 +794,7 @@ h3 {
 @keyframes pageRise {
     from {
         opacity: 0;
-        transform: translateY(26px) scale(0.985);
+        transform: translateY(34px) scale(0.982);
     }
 
     to {
