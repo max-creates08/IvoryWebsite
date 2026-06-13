@@ -1,6 +1,6 @@
-# Ivory Website Setup
+# Ivory Notes Website Setup
 
-This folder contains Ivory's public product, support, and privacy pages. It is a
+This folder contains Ivory Notes' public product, support, and privacy pages. It is a
 plain static website with no analytics, cookies, forms, build tools, or external
 dependencies.
 
@@ -9,7 +9,7 @@ dependencies.
 1. Confirm that `support@useivory.app` can send and receive email.
 2. Open `index.html`, `support.html`, and `privacy.html` in Safari.
 3. Check every link and proofread the policy.
-4. Confirm the policy still matches the shipping build of Ivory.
+4. Confirm the policy still matches the shipping build of Ivory Notes.
 
 ## Publishing with GitHub Pages
 
@@ -28,11 +28,11 @@ After publishing, keep these permanent URLs:
 - Marketing URL: `https://useivory.app/`
 
 Enter the first two URLs in App Store Connect. Also add accessible Support and
-Privacy links inside Ivory's Settings screen before submission.
+Privacy links inside Ivory Notes' Settings screen before submission.
 
 ## Updating the policy
 
-Review the policy whenever Ivory adds:
+Review the policy whenever Ivory Notes adds:
 
 - Analytics or crash-reporting SDKs
 - Cloud sync or an online account
@@ -50,7 +50,7 @@ For each report, record:
 
 - Date received
 - Device and OS version
-- Ivory version and build
+- Ivory Notes version and build
 - Steps to reproduce
 - Expected and actual behavior
 - Screenshot or error message

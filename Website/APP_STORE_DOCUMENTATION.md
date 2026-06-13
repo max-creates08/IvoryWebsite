@@ -1,10 +1,10 @@
-# Ivory V1 App Store Documentation
+# Ivory Notes V1 App Store Documentation
 
 Use this file as the source of truth while completing App Store Connect.
 
 ## Product summary
 
-Ivory is a private, offline voice-notes app that records speech, creates on-device
+Ivory Notes is a private, offline voice-notes app that records speech, creates on-device
 transcripts, and turns recordings into organized notes and study materials.
 
 ## Suggested subtitle
@@ -19,10 +19,10 @@ Secondary: Education
 
 ## Privacy summary
 
-- No Ivory account is required.
+- No Ivory Notes account is required.
 - Recording and transcription work offline.
 - Audio and notes are stored locally in the app's container.
-- Ivory does not operate a server that receives recordings or note content.
+- Ivory Notes does not operate a server that receives recordings or note content.
 - No third-party advertising SDK is included.
 - No cross-app or cross-website tracking is used.
 - Users can delete individual audio files, complete notes, or all app content.
@@ -33,12 +33,12 @@ Apple.
 
 ## App Review notes draft
 
-Ivory is an offline-first voice-notes app. Microphone access is used only when the
+Ivory Notes is an offline-first voice-notes app. Microphone access is used only when the
 user starts an audio recording. The bundled speech model performs transcription
-on the device; no account or Ivory backend is required.
+on the device; no account or Ivory Notes backend is required.
 
 The companion Apple Watch app records audio and transfers it to the paired iPhone.
-The iPhone then creates the transcript and note. Ivory also includes Home Screen
+The iPhone then creates the transcript and note. Ivory Notes also includes Home Screen
 and Lock Screen widgets and a recording Live Activity.
 
 To test:
