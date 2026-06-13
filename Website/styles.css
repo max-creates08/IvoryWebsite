@@ -348,6 +348,15 @@ h3 {
         padding-right: 28px;
     }
 
+    /*
+      This is the important part:
+      the header gets extra side spacing on iPhone.
+    */
+    .site-header .shell {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
     .hero {
         padding-top: 72px;
         padding-bottom: 56px;
@@ -380,13 +389,18 @@ h3 {
         align-items: flex-start;
         flex-direction: column;
         gap: 14px;
-        padding: 16px 0;
+        min-height: auto;
+        padding: 18px 0;
+    }
+
+    .brand {
+        width: 100%;
     }
 
     .nav-links {
         gap: 18px;
         overflow-x: auto;
-        padding-bottom: 2px;
+        padding-bottom: 4px;
         width: 100%;
     }
 
@@ -402,6 +416,11 @@ h3 {
     .shell {
         padding-left: 24px;
         padding-right: 24px;
+    }
+
+    .site-header .shell {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .button {
