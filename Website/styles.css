@@ -66,15 +66,11 @@ a {
 }
 
 .brand-mark {
-    align-items: center;
-    background: var(--ink);
     border-radius: 11px;
-    color: var(--paper);
-    display: inline-flex;
-    font-family: Georgia, serif;
-    font-size: 1.35rem;
+    display: block;
     height: 38px;
-    justify-content: center;
+    object-fit: cover;
+    box-shadow: 0 3px 10px rgba(47, 58, 69, 0.16);
     width: 38px;
 }
 
@@ -362,7 +358,6 @@ h3 {
         background: rgba(24, 32, 39, 0.84);
     }
 
-    .brand-mark,
     .button.primary,
     .contact-box {
         background: #eef1f3;
