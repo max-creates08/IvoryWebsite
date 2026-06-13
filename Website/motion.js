@@ -11,6 +11,8 @@ if (!reduceMotion) {
             ".watch-shot",
             ".step-card",
             ".card",
+            ".version-card",
+            ".version-row",
             ".screen-card",
             ".privacy-proof span",
             ".page-header",
