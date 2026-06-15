@@ -130,6 +130,30 @@ a {
     transform: scaleX(1);
 }
 
+.nav-links .nav-install {
+    background: var(--ink);
+    border-radius: 999px;
+    color: var(--paper);
+    margin-left: 2px;
+    padding: 6px 12px;
+    transform: translateY(-6px);
+    transition:
+        background-color var(--motion),
+        box-shadow var(--motion),
+        color var(--motion),
+        transform var(--motion);
+}
+
+.nav-links .nav-install:hover {
+    box-shadow: 0 10px 24px rgba(47, 58, 69, 0.18);
+    color: var(--paper);
+    transform: translateY(-8px);
+}
+
+.nav-links .nav-install::after {
+    display: none;
+}
+
 .hero {
     padding: 104px 0 80px;
 }
@@ -210,6 +234,55 @@ h3 {
 
 .button.secondary {
     background: transparent;
+}
+
+.app-store-button {
+    align-items: center;
+    background: #05070a;
+    border-color: #05070a;
+    color: #fff;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.08;
+    min-height: 62px;
+    min-width: 190px;
+    padding: 10px 24px 11px;
+}
+
+.app-store-button span {
+    font-size: 0.78rem;
+    font-weight: 650;
+}
+
+.app-store-button strong {
+    font-size: 1.32rem;
+    font-weight: 850;
+    letter-spacing: 0;
+}
+
+.app-store-button:hover {
+    background: #111923;
+    color: #fff;
+}
+
+.availability-strip {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+    max-width: 780px;
+}
+
+.availability-strip span {
+    background: rgba(47, 58, 69, 0.08);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink);
+    font-size: 0.9rem;
+    font-weight: 750;
+    padding: 8px 12px;
 }
 
 .grid {
@@ -576,6 +649,43 @@ h3 {
     padding-top: 18px;
 }
 
+.install-band {
+    background:
+        radial-gradient(circle at 16% 0%, rgba(238, 241, 243, 0.16), transparent 22rem),
+        linear-gradient(145deg, rgba(47, 58, 69, 0.98), rgba(17, 25, 35, 0.98));
+    color: #eef1f3;
+    margin: 24px 0 58px;
+    padding: 70px 0;
+}
+
+.install-band .eyebrow,
+.install-band h2 {
+    color: #eef1f3;
+}
+
+.install-band .section-copy {
+    color: rgba(238, 241, 243, 0.74);
+    margin-bottom: 0;
+}
+
+.install-band-inner {
+    align-items: center;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: minmax(0, 1fr) auto;
+}
+
+.app-store-button-light {
+    background: #eef1f3;
+    border-color: #eef1f3;
+    color: #111923;
+}
+
+.app-store-button-light:hover {
+    background: #fff;
+    color: #111923;
+}
+
 .version-grid,
 .version-overview {
     display: grid;
@@ -868,6 +978,34 @@ h3 {
     opacity: 0.9;
 }
 
+.sticky-install {
+    background: var(--ink);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    bottom: 18px;
+    box-shadow: 0 18px 42px rgba(47, 58, 69, 0.28);
+    color: var(--paper);
+    display: none;
+    font-weight: 850;
+    left: 18px;
+    padding: 13px 18px;
+    position: fixed;
+    right: 18px;
+    text-align: center;
+    text-decoration: none;
+    transform: translateY(92px);
+    transition:
+        background-color var(--motion),
+        box-shadow var(--motion),
+        transform var(--motion);
+    z-index: 20;
+}
+
+.sticky-install:hover {
+    background: #111923;
+    box-shadow: 0 22px 52px rgba(47, 58, 69, 0.34);
+}
+
 .motion-ready .hero > *,
 .motion-ready .reveal-pending {
     opacity: 0;
@@ -889,6 +1027,14 @@ h3 {
 
 .motion-ready .hero > *:nth-child(4) {
     animation-delay: 270ms;
+}
+
+.motion-ready .hero > *:nth-child(5) {
+    animation-delay: 360ms;
+}
+
+.motion-ready .sticky-install {
+    transform: translateY(0);
 }
 
 .motion-ready .is-visible {
@@ -990,7 +1136,8 @@ h3 {
     .steps,
     .preview-grid,
     .version-grid,
-    .version-overview {
+    .version-overview,
+    .install-band-inner {
         grid-template-columns: 1fr;
     }
 
@@ -1091,6 +1238,23 @@ h3 {
         width: 100%;
     }
 
+    .nav-links .nav-install {
+        transform: none;
+    }
+
+    .nav-links .nav-install:hover {
+        transform: translateY(-1px);
+    }
+
+    .install-band {
+        margin-bottom: 48px;
+        padding: 54px 0;
+    }
+
+    .sticky-install {
+        display: block;
+    }
+
     .footer-row {
         align-items: flex-start;
         flex-direction: column;
@@ -1115,8 +1279,16 @@ h3 {
         text-align: center;
     }
 
+    .app-store-button {
+        width: 100%;
+    }
+
     .actions {
         width: 100%;
+    }
+
+    .site-footer {
+        padding-bottom: 76px;
     }
 
     h1 {

@@ -14,6 +14,7 @@ if (!reduceMotion) {
             ".version-card",
             ".version-row",
             ".screen-card",
+            ".install-band-inner",
             ".privacy-proof span",
             ".page-header",
             ".document section",
