@@ -1,4 +1,33 @@
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const appStoreButtons = document.querySelectorAll(".app-store-button");
+const userAgent = navigator.userAgent || "";
+const platform = navigator.platform || "";
+const isAppleTouchDevice = navigator.maxTouchPoints > 1 && /MacIntel/.test(platform);
+const isIPhoneOrIPad = /iPhone|iPad|iPod/.test(userAgent) || isAppleTouchDevice;
+const isMac = !isIPhoneOrIPad && /Mac/.test(platform);
+
+appStoreButtons.forEach((button) => {
+    const kicker = button.querySelector("[data-app-store-kicker]");
+    const title = button.querySelector("[data-app-store-title]");
+
+    if (!kicker || !title) {
+        return;
+    }
+
+    if (isIPhoneOrIPad) {
+        kicker.textContent = "Download on the";
+        title.textContent = "App Store";
+        button.setAttribute("aria-label", "Download Ivory Note on the App Store");
+    } else if (isMac) {
+        kicker.textContent = "Open in the";
+        title.textContent = "Mac App Store";
+        button.setAttribute("aria-label", "Open Ivory Note in the Mac App Store");
+    } else {
+        kicker.textContent = "View on the";
+        title.textContent = "App Store";
+        button.setAttribute("aria-label", "View Ivory Note on the App Store");
+    }
+});
 
 if (!reduceMotion) {
     document.documentElement.classList.add("motion-ready");
