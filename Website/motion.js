@@ -39,6 +39,7 @@ if (!reduceMotion) {
             ".phone-shot",
             ".watch-shot",
             ".step-card",
+            ".platform-card",
             ".card",
             ".version-card",
             ".version-row",
