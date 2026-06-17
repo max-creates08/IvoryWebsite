@@ -161,7 +161,7 @@
                     Ivory Note is an offline-first voice-notes application developed by
                     Maksim Rabinovich. Ivory Note does not require an account and does not
                     operate a server that receives your recordings, transcripts, notes,
-                    summaries, study guides, or flashcards.
+                    summaries, study guides, flashcards, Learn Plans, or other note content.
                 </p>
             </section>
 
@@ -172,7 +172,7 @@
                     <li>Microphone audio recorded through Ivory Note.</li>
                     <li>Audio files you import into the app.</li>
                     <li>Recordings transferred from your paired Apple Watch.</li>
-                    <li>Transcripts, titles, summaries, subjects, study guides, and flashcards generated from your content.</li>
+                    <li>Transcripts, titles, summaries, subjects, study guides, flashcards, and Learn Plans generated from your content.</li>
                     <li>App preferences, such as whether onboarding has been completed.</li>
                 </ul>
             </section>
@@ -180,10 +180,20 @@
             <section>
                 <h2>How processing works</h2>
                 <p>
-                    Speech transcription runs on your device using a model included
-                    with Ivory Note. Compatible devices may use Apple-provided on-device
-                    intelligence features to improve titles and summaries. Ivory Note does
-                    not send your recordings or note content to an Ivory Note-operated server.
+                    Speech transcription runs on your device using WhisperKit and a speech
+                    model included with Ivory Note. WhisperKit loads the bundled model from
+                    the app package and runs transcription locally using Apple/Core ML
+                    infrastructure. Model downloads are disabled in this build.
+                </p>
+                <p>
+                    Ivory Note does not use the OpenAI API and does not send recordings,
+                    transcripts, summaries, study guides, flashcards, Learn Plans, or other
+                    note content to OpenAI or any other third-party AI service.
+                </p>
+                <p>
+                    Compatible devices may use Apple's on-device intelligence APIs to improve
+                    titles, summaries, and Learn Plans. Note content remains on device for
+                    that processing.
                 </p>
             </section>
 
@@ -226,8 +236,9 @@
                 <h2>Data collection, tracking, and advertising</h2>
                 <p>
                     Ivory Note does not require account registration, display third-party
-                    advertising, or track you across apps and websites. The current
-                    version does not include third-party advertising or analytics SDKs.
+                    advertising, include third-party analytics SDKs, or track you across apps
+                    and websites. Ivory Note does not share personal data with a third-party
+                    AI service.
                 </p>
                 <p>
                     Apple may independently process limited information when you download
