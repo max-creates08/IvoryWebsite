@@ -1056,6 +1056,7 @@ h3 {
     color: var(--ink-soft);
     display: flex;
     font-size: 0.9rem;
+    gap: 24px;
     justify-content: space-between;
 }
 
@@ -1071,6 +1072,24 @@ h3 {
 .footer-links a:hover {
     color: var(--ink);
     opacity: 0.9;
+}
+
+.footer-language {
+    align-items: center;
+    display: flex;
+    gap: 9px;
+    margin-left: 6px;
+    white-space: nowrap;
+}
+
+.footer-language span {
+    font-size: 0.82rem;
+    font-weight: 650;
+}
+
+.footer-language [data-language-picker] {
+    background: transparent;
+    padding: 6px 9px;
 }
 
 .sticky-install {
@@ -1365,6 +1384,11 @@ h3 {
         align-items: flex-start;
         flex-direction: column;
         gap: 12px;
+    }
+
+    .footer-language {
+        margin-left: 0;
+        margin-top: 4px;
     }
 }
 
