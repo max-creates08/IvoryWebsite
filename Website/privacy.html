@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="ivory-app-icon.png">
     <link rel="apple-touch-icon" href="ivory-app-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="localize.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -18,20 +19,23 @@
                 Ivory Note
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="help.html">Help</a>
+                <a data-i18n="nav.home" href="index.html">Home</a>
+                <a data-i18n="nav.support" href="help.html">Help</a>
                 <a href="info.html">Info</a>
                 <a class="nav-install" href="https://apps.apple.com/us/app/ivory-note/id6780518969">Install</a>
+                <select data-language-picker aria-label="Language">
+                    <option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="pt">Português</option><option value="zh-Hans">简体中文</option><option value="ru">Русский</option>
+                </select>
             </div>
         </nav>
     </header>
 
     <main class="shell">
         <header class="page-header">
-            <p class="eyebrow">Ivory Note legal</p>
-            <h1>Privacy Policy</h1>
-            <p class="lede">Ivory Note is designed to keep your voice notes private and under your control.</p>
-            <p class="meta">Effective date: June 17, 2026</p>
+            <p class="eyebrow" data-i18n="privacy.eyebrow">Ivory Note legal</p>
+            <h1 data-i18n="privacy.title">Privacy Policy</h1>
+            <p class="lede" data-i18n="privacy.lede">Ivory Note is designed to keep your voice notes private and under your control.</p>
+            <p class="meta" data-i18n="privacy.date">Effective date: June 19, 2026</p>
         </header>
 
         <article class="document">
@@ -60,7 +64,7 @@
             <section>
                 <h2>How processing works</h2>
                 <p>
-                    Speech transcription runs on your device using WhisperKit and a speech
+                    Speech transcription and automatic language detection run on your device using WhisperKit and a speech
                     model included with Ivory Note. WhisperKit loads the bundled model from
                     the app package and runs transcription locally using Apple/Core ML
                     infrastructure. Model downloads are disabled in this build.

@@ -91,8 +91,24 @@ a {
 }
 
 .nav-links {
+    align-items: center;
     display: flex;
     gap: 24px;
+}
+
+[data-language-picker] {
+    appearance: none;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    color: var(--ink);
+    cursor: pointer;
+    flex: 0 0 auto;
+    font: inherit;
+    font-size: 0.86rem;
+    font-weight: 650;
+    max-width: 126px;
+    padding: 7px 9px;
 }
 
 .nav-links a {
@@ -1317,10 +1333,15 @@ h3 {
     }
 
     .nav-links {
+        align-items: center;
         gap: 18px;
         overflow-x: auto;
         padding-bottom: 4px;
         width: 100%;
+    }
+
+    [data-language-picker] {
+        max-width: 112px;
     }
 
     .nav-links .nav-install {

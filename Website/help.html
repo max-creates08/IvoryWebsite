@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" href="ivory-app-icon.png">
     <link rel="apple-touch-icon" href="ivory-app-icon.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="localize.js" defer></script>
 </head>
 <body>
     <header class="site-header">
@@ -18,19 +19,22 @@
                 Ivory Note
             </a>
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a aria-current="page" href="help.html">Help</a>
+                <a data-i18n="nav.home" href="index.html">Home</a>
+                <a data-i18n="nav.support" aria-current="page" href="help.html">Help</a>
                 <a href="info.html">Info</a>
                 <a class="nav-install" href="https://apps.apple.com/us/app/ivory-note/id6780518969">Install</a>
+                <select data-language-picker aria-label="Language">
+                    <option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="pt">Português</option><option value="zh-Hans">简体中文</option><option value="ru">Русский</option>
+                </select>
             </div>
         </nav>
     </header>
 
     <main class="shell">
         <header class="page-header">
-            <p class="eyebrow">Ivory Note help</p>
-            <h1>Help</h1>
-            <p class="lede">
+            <p class="eyebrow" data-i18n="support.eyebrow">Ivory Note help</p>
+            <h1 data-i18n="nav.support">Help</h1>
+            <p class="lede" data-i18n="support.lede">
                 Support, troubleshooting, and privacy information for recording,
                 transcription, storage, widgets, and Apple Watch.
             </p>
@@ -38,6 +42,16 @@
 
         <section id="support" class="faq" aria-label="Frequently asked questions">
             <details open>
+                <summary data-i18n="support.languages.title">Which languages does Ivory Note support?</summary>
+                <p data-i18n="support.languages.body">Ivory Note 1.1 automatically detects the spoken language during on-device transcription. The app interface is available in English, Spanish, French, German, Portuguese, Simplified Chinese, and Russian.</p>
+            </details>
+
+            <details>
+                <summary data-i18n="support.titles.title">How does Ivory Note title a long recording?</summary>
+                <p data-i18n="support.titles.body">Ivory Note analyzes repeated subjects across the complete transcript and favors the dominant topic instead of the greeting or first sentence.</p>
+            </details>
+
+            <details>
                 <summary>Ivory Note cannot access my microphone</summary>
                 <ol>
                     <li>Open the Settings app on your iPhone.</li>
