@@ -51,6 +51,132 @@
         }
     };
 
+    const release13 = {
+        en: {
+            "home.eyebrow": "Ivory Note 1.3",
+            "home.lede": "Record with confidence. Ivory Note keeps interrupted audio safe, helps you resume or save, and creates clearer study materials on device.",
+            "home.new": "New in 1.3",
+            "home.featuresTitle": "Safer recordings. Better study materials. Still private.",
+            "home.feature.transcription.title": "Recording recovery",
+            "home.feature.transcription.body": "Keep recording when you leave the app. After an interruption, resume or save without losing your audio.",
+            "home.feature.titles.title": "Sharper study materials",
+            "home.feature.titles.body": "Improved titles, summaries, study guides, and flashcards focus on the most useful parts of your recording.",
+            "home.feature.languages.title": "Correct device details",
+            "home.feature.languages.body": "Recordings made on iPad are now identified correctly, with clearer source information across your notes.",
+            "support.languages.body": "Ivory Note 1.3 automatically detects the spoken language during on-device transcription. The app interface is available in English, Spanish, French, German, Portuguese, Simplified Chinese, and Russian.",
+            "release.current": "Current build",
+            "release.version": "Version 1.3 · June 2026",
+            "release.title": "Safer recordings and smarter study tools",
+            "release.body": "Version 1.3 protects interrupted recordings, improves recovery and device labels, and creates clearer summaries and study materials."
+        },
+        es: {
+            "home.eyebrow": "Ivory Note 1.3",
+            "home.lede": "Graba con confianza. Ivory Note protege el audio interrumpido, te permite reanudarlo o guardarlo y crea mejores materiales de estudio en el dispositivo.",
+            "home.new": "Novedades de 1.3",
+            "home.featuresTitle": "Grabaciones más seguras. Mejores materiales de estudio. La misma privacidad.",
+            "home.feature.transcription.title": "Recuperación de grabaciones",
+            "home.feature.transcription.body": "Sigue grabando al salir de la app. Tras una interrupción, reanuda o guarda sin perder el audio.",
+            "home.feature.titles.title": "Materiales de estudio más claros",
+            "home.feature.titles.body": "Los títulos, resúmenes, guías de estudio y tarjetas mejorados se centran en lo más útil de la grabación.",
+            "home.feature.languages.title": "Datos correctos del dispositivo",
+            "home.feature.languages.body": "Las grabaciones hechas en iPad ahora se identifican correctamente y muestran mejor su origen.",
+            "support.languages.body": "Ivory Note 1.3 detecta automáticamente el idioma hablado durante la transcripción en el dispositivo. La interfaz está disponible en inglés, español, francés, alemán, portugués, chino simplificado y ruso.",
+            "release.current": "Versión actual",
+            "release.version": "Versión 1.3 · junio de 2026",
+            "release.title": "Grabaciones más seguras y mejores herramientas de estudio",
+            "release.body": "La versión 1.3 protege las grabaciones interrumpidas, mejora la recuperación y la identificación del dispositivo, y crea resúmenes y materiales de estudio más claros."
+        },
+        fr: {
+            "home.eyebrow": "Ivory Note 1.3",
+            "home.lede": "Enregistrez en confiance. Ivory Note protège l’audio interrompu, permet de reprendre ou d’enregistrer et crée de meilleurs supports d’étude sur l’appareil.",
+            "home.new": "Nouveautés de la version 1.3",
+            "home.featuresTitle": "Des enregistrements plus sûrs. De meilleurs supports d’étude. Toujours privé.",
+            "home.feature.transcription.title": "Récupération des enregistrements",
+            "home.feature.transcription.body": "Continuez à enregistrer en quittant l’app. Après une interruption, reprenez ou sauvegardez sans perdre l’audio.",
+            "home.feature.titles.title": "Supports d’étude plus pertinents",
+            "home.feature.titles.body": "Les titres, résumés, guides d’étude et cartes mémoire améliorés se concentrent sur l’essentiel de l’enregistrement.",
+            "home.feature.languages.title": "Informations d’appareil exactes",
+            "home.feature.languages.body": "Les enregistrements réalisés sur iPad sont désormais correctement identifiés et leur source est plus claire.",
+            "support.languages.body": "Ivory Note 1.3 détecte automatiquement la langue parlée pendant la transcription sur l’appareil. L’interface est disponible en anglais, espagnol, français, allemand, portugais, chinois simplifié et russe.",
+            "release.current": "Version actuelle",
+            "release.version": "Version 1.3 · juin 2026",
+            "release.title": "Des enregistrements plus sûrs et de meilleurs outils d’étude",
+            "release.body": "La version 1.3 protège les enregistrements interrompus, améliore la récupération et l’identification de l’appareil, ainsi que les résumés et supports d’étude."
+        },
+        de: {
+            "home.eyebrow": "Ivory Note 1.3",
+            "home.lede": "Nimm sicher auf. Ivory Note schützt unterbrochenes Audio, lässt dich fortsetzen oder speichern und erstellt bessere Lernmaterialien auf dem Gerät.",
+            "home.new": "Neu in 1.3",
+            "home.featuresTitle": "Sicherere Aufnahmen. Bessere Lernmaterialien. Weiterhin privat.",
+            "home.feature.transcription.title": "Aufnahmewiederherstellung",
+            "home.feature.transcription.body": "Die Aufnahme läuft beim Verlassen der App weiter. Nach einer Unterbrechung kannst du fortsetzen oder speichern, ohne Audio zu verlieren.",
+            "home.feature.titles.title": "Bessere Lernmaterialien",
+            "home.feature.titles.body": "Verbesserte Titel, Zusammenfassungen, Lernhilfen und Karteikarten konzentrieren sich auf die wichtigsten Teile deiner Aufnahme.",
+            "home.feature.languages.title": "Korrekte Gerätedetails",
+            "home.feature.languages.body": "Aufnahmen vom iPad werden jetzt korrekt erkannt und zeigen klarere Quellenangaben.",
+            "support.languages.body": "Ivory Note 1.3 erkennt die gesprochene Sprache automatisch während der Transkription auf dem Gerät. Die App ist auf Englisch, Spanisch, Französisch, Deutsch, Portugiesisch, vereinfachtem Chinesisch und Russisch verfügbar.",
+            "release.current": "Aktuelle Version",
+            "release.version": "Version 1.3 · Juni 2026",
+            "release.title": "Sicherere Aufnahmen und bessere Lernwerkzeuge",
+            "release.body": "Version 1.3 schützt unterbrochene Aufnahmen, verbessert Wiederherstellung und Geräteangaben und erstellt klarere Zusammenfassungen und Lernmaterialien."
+        },
+        pt: {
+            "home.eyebrow": "Ivory Note 1.3",
+            "home.lede": "Grave com confiança. O Ivory Note protege áudio interrompido, permite retomar ou guardar e cria melhores materiais de estudo no dispositivo.",
+            "home.new": "Novidades na versão 1.3",
+            "home.featuresTitle": "Gravações mais seguras. Melhores materiais de estudo. Sempre privado.",
+            "home.feature.transcription.title": "Recuperação de gravações",
+            "home.feature.transcription.body": "Continue a gravar ao sair da app. Após uma interrupção, retome ou guarde sem perder o áudio.",
+            "home.feature.titles.title": "Materiais de estudo mais claros",
+            "home.feature.titles.body": "Títulos, resumos, guias de estudo e cartões melhorados destacam as partes mais úteis da gravação.",
+            "home.feature.languages.title": "Detalhes corretos do dispositivo",
+            "home.feature.languages.body": "As gravações feitas no iPad são agora identificadas corretamente e mostram a origem com maior clareza.",
+            "support.languages.body": "O Ivory Note 1.3 deteta automaticamente o idioma falado durante a transcrição no dispositivo. A interface está disponível em inglês, espanhol, francês, alemão, português, chinês simplificado e russo.",
+            "release.current": "Versão atual",
+            "release.version": "Versão 1.3 · junho de 2026",
+            "release.title": "Gravações mais seguras e melhores ferramentas de estudo",
+            "release.body": "A versão 1.3 protege gravações interrompidas, melhora a recuperação e a identificação do dispositivo e cria resumos e materiais de estudo mais claros."
+        },
+        "zh-Hans": {
+            "home.eyebrow": "Ivory Note 1.3",
+            "home.lede": "安心录音。Ivory Note 可保护中断的音频，支持继续或保存录音，并在设备端生成更清晰的学习材料。",
+            "home.new": "1.3 新功能",
+            "home.featuresTitle": "录音更安全，学习材料更清晰，隐私依旧。",
+            "home.feature.transcription.title": "录音恢复",
+            "home.feature.transcription.body": "离开 App 时继续录音。发生中断后，可继续或保存录音，不会丢失音频。",
+            "home.feature.titles.title": "更清晰的学习材料",
+            "home.feature.titles.body": "改进的标题、摘要、学习指南和记忆卡会聚焦录音中最有用的内容。",
+            "home.feature.languages.title": "准确的设备信息",
+            "home.feature.languages.body": "在 iPad 上创建的录音现在会被正确识别，并显示更清晰的来源信息。",
+            "support.languages.body": "Ivory Note 1.3 会在设备端转写时自动检测口语语言。应用界面支持英语、西班牙语、法语、德语、葡萄牙语、简体中文和俄语。",
+            "release.current": "当前版本",
+            "release.version": "版本 1.3 · 2026 年 6 月",
+            "release.title": "更安全的录音与更智能的学习工具",
+            "release.body": "版本 1.3 可保护中断的录音，改进恢复功能和设备标识，并生成更清晰的摘要与学习材料。"
+        },
+        ru: {
+            "home.eyebrow": "Ivory Note 1.3",
+            "home.lede": "Записывайте уверенно. Ivory Note защищает прерванное аудио, позволяет продолжить или сохранить запись и создаёт более качественные учебные материалы на устройстве.",
+            "home.new": "Новое в версии 1.3",
+            "home.featuresTitle": "Более надёжные записи. Лучшие учебные материалы. Та же конфиденциальность.",
+            "home.feature.transcription.title": "Восстановление записи",
+            "home.feature.transcription.body": "Запись продолжается при выходе из приложения. После прерывания её можно продолжить или сохранить без потери аудио.",
+            "home.feature.titles.title": "Более точные учебные материалы",
+            "home.feature.titles.body": "Улучшенные названия, сводки, учебные руководства и карточки выделяют самое важное в записи.",
+            "home.feature.languages.title": "Правильные данные устройства",
+            "home.feature.languages.body": "Записи, созданные на iPad, теперь определяются правильно и содержат более точные сведения об источнике.",
+            "support.languages.body": "Ivory Note 1.3 автоматически определяет язык речи при расшифровке на устройстве. Интерфейс доступен на английском, испанском, французском, немецком, португальском, упрощённом китайском и русском языках.",
+            "release.current": "Текущая версия",
+            "release.version": "Версия 1.3 · июнь 2026 г.",
+            "release.title": "Более надёжные записи и лучшие учебные инструменты",
+            "release.body": "Версия 1.3 защищает прерванные записи, улучшает восстановление и данные устройства, а также создаёт более ясные сводки и учебные материалы."
+        }
+    };
+
+    Object.entries(release13).forEach(([language, strings]) => {
+        Object.assign(translations[language], strings);
+    });
+
     const homepagePhrases = [
         "Home", "Help", "Info", "Install", "Preview the app", "Download on the",
         "Supported platforms", "Built for the entire Apple ecosystem.",
