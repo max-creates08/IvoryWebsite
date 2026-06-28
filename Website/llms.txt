@@ -1,0 +1,62 @@
+# Ivory Note
+
+> Ivory Note is an app for private, multilingual voice notes that supports audio recording, transcription, and study tools across the Apple ecosystem.
+
+Ivory Note is a voice note and transcription app designed for privacy and multi-device support. It emphasizes local storage, safer recovery for interrupted recordings, on-device transcription, and study tools such as summaries, study guides, and flashcards.
+
+## Core Content
+
+[Visit Ivory Note](https://useivory.app/)
+
+### Features and Capabilities
+
+- Private multilingual voice recording and transcription
+- On-device transcription and local storage for privacy
+- Audio recovery for interrupted recordings
+- Improved summaries, study guides, and flashcards
+- Support across iPhone, iPad, Mac, Apple Watch, and Vision Pro
+- Dark mode and light mode interfaces
+- Notes organized by subject, class, idea, or source
+- Quick recording from the device of choice
+- No account required
+- Download and install from the App Store
+
+### Platform Support
+
+- iPhone: main interface for recording, search, and study tools
+- iPad: larger workspace for review and transcripts
+- Mac: notes management during research, writing, or planning
+- Apple Watch: quick voice capture from the wrist
+- Vision Pro: spatial workspace for study material
+
+### Privacy and Data Storage
+
+- No Ivory Note account is required
+- Recordings and generated note content are stored locally
+- Transcription runs on device using bundled speech technology
+- Ivory Note does not operate a server that receives recordings or generated note content
+- Users control deletion of recordings, notes, and app content
+
+## Resources
+
+[Download on the App Store](https://apps.apple.com/us/app/ivory-note/id6780518969)
+
+[Release notes and version history](https://useivory.app/info.html#versions)
+
+[Help and support](https://useivory.app/help.html)
+
+[Privacy policy](https://useivory.app/privacy.html)
+
+## Optional
+
+### Future Plans
+
+- Themed interfaces
+- Siri integration for voice commands
+- Additional premium workflows for advanced note review
+
+### Additional Content
+
+- User guides and tips
+- Feature updates and roadmap notes through release notes
+- Feedback and contact channels
