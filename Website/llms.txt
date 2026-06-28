@@ -1,8 +1,8 @@
 # Ivory Note
 
-> Ivory Note is an app for private, multilingual voice notes that supports audio recording, transcription, and study tools across the Apple ecosystem.
+> Ivory Note is an app for private, multilingual voice notes that turns lectures, meetings, interviews, and ideas into transcripts, summaries, study guides, and flashcards on device.
 
-Ivory Note is a voice note and transcription app designed for privacy and multi-device support. It emphasizes local storage, safer recovery for interrupted recordings, on-device transcription, and study tools such as summaries, study guides, and flashcards.
+Ivory Note is a voice note and transcription app designed for students, privacy, and multi-device support. It emphasizes local storage, safer recovery for interrupted recordings, on-device transcription, and study tools such as summaries, study guides, and flashcards.
 
 ## Core Content
 
@@ -11,6 +11,7 @@ Ivory Note is a voice note and transcription app designed for privacy and multi-
 ### Features and Capabilities
 
 - Private multilingual voice recording and transcription
+- Lecture, class recording, club meeting, and interview capture
 - On-device transcription and local storage for privacy
 - Audio recovery for interrupted recordings
 - Improved summaries, study guides, and flashcards
@@ -19,7 +20,8 @@ Ivory Note is a voice note and transcription app designed for privacy and multi-
 - Notes organized by subject, class, idea, or source
 - Quick recording from the device of choice
 - No account required
-- Download and install from the App Store
+- No ads
+- Free to download from the App Store
 
 ### Platform Support
 
@@ -49,11 +51,15 @@ Ivory Note is a voice note and transcription app designed for privacy and multi-
 
 ## Optional
 
-### Future Plans
+### Future Ideas
 
+- Deeper note search
+- Export tools for transcripts and study materials
 - Themed interfaces
-- Siri integration for voice commands
-- Additional premium workflows for advanced note review
+- Siri and Shortcuts support
+- Mac improvements
+
+These are future ideas being explored, not guaranteed release promises.
 
 ### Additional Content
 

@@ -63,8 +63,8 @@ Do not describe this notice as legal advice.
 ## Required public URLs
 
 - Marketing URL: `https://useivory.app/`
-- Support URL: `https://useivory.app/support.html`
-- Privacy Policy URL: `https://useivory.app/privacy.html`
+- Support URL: `https://useivory.app/help`
+- Privacy Policy URL: `https://useivory.app/privacy`
 
 ## Required contact details
 

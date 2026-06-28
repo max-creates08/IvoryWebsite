@@ -23,8 +23,8 @@ folder without changes.
 
 After publishing, keep these permanent URLs:
 
-- Support URL: `https://useivory.app/support.html`
-- Privacy Policy URL: `https://useivory.app/privacy.html`
+- Support URL: `https://useivory.app/help`
+- Privacy Policy URL: `https://useivory.app/privacy`
 - Marketing URL: `https://useivory.app/`
 
 Enter the first two URLs in App Store Connect. Also add accessible Support and
