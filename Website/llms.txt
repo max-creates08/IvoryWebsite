@@ -41,11 +41,11 @@ Ivory Note is a voice note and transcription app designed for privacy and multi-
 
 [Download on the App Store](https://apps.apple.com/us/app/ivory-note/id6780518969)
 
-[Release notes and version history](https://useivory.app/info.html#versions)
+[Release notes and version history](https://useivory.app/info#versions)
 
-[Help and support](https://useivory.app/help.html)
+[Help and support](https://useivory.app/help)
 
-[Privacy policy](https://useivory.app/privacy.html)
+[Privacy policy](https://useivory.app/privacy)
 
 ## Optional
 
