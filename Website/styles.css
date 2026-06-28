@@ -377,7 +377,7 @@ h3 {
 .platform-grid {
     display: grid;
     gap: 14px;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .platform-card {

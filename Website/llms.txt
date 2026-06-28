@@ -15,7 +15,7 @@ Ivory Note is a voice note and transcription app designed for students, privacy,
 - On-device transcription and local storage for privacy
 - Audio recovery for interrupted recordings
 - Improved summaries, study guides, and flashcards
-- Support across iPhone, iPad, Mac, Apple Watch, and Vision Pro
+- Support across iPhone, iPad, Mac, and Apple Watch
 - Dark mode and light mode interfaces
 - Notes organized by subject, class, idea, or source
 - Quick recording from the device of choice
@@ -29,7 +29,6 @@ Ivory Note is a voice note and transcription app designed for students, privacy,
 - iPad: larger workspace for review and transcripts
 - Mac: notes management during research, writing, or planning
 - Apple Watch: quick voice capture from the wrist
-- Vision Pro: spatial workspace for study material
 
 ### Privacy and Data Storage
 
