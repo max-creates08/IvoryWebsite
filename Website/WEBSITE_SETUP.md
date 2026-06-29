@@ -7,7 +7,7 @@ dependencies.
 ## Before publishing
 
 1. Confirm that `support@useivory.app` can send and receive email.
-2. Open `index.html`, `support.html`, and `privacy.html` in Safari.
+2. Open `index.html`, `help.html`, and `privacy.html` in Safari.
 3. Check every link and proofread the policy.
 4. Confirm the policy still matches the shipping build of Ivory Notes.
 
