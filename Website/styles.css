@@ -223,7 +223,7 @@ h3 {
     margin-top: 34px;
 }
 
-.hero-social {
+.hero-contact {
     align-items: center;
     color: var(--ink-soft);
     display: inline-flex;
@@ -236,12 +236,12 @@ h3 {
     transition: color var(--motion), transform var(--motion);
 }
 
-.hero-social:hover {
+.hero-contact:hover {
     color: var(--ink);
     transform: translateY(-2px);
 }
 
-.hero-social::before {
+.hero-contact::before {
     background: currentColor;
     border-radius: 999px;
     content: "";
@@ -250,11 +250,11 @@ h3 {
     width: 8px;
 }
 
-.hero-social span {
+.hero-contact span {
     font-weight: 700;
 }
 
-.hero-social strong {
+.hero-contact strong {
     color: var(--ink);
     font-size: 1.05rem;
     font-weight: 850;

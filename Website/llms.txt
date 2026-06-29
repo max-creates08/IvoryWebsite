@@ -46,7 +46,7 @@ Ivory Note is a voice note and transcription app designed for students, privacy,
 
 [Help and support](https://useivory.app/help)
 
-[Instagram: @useivory.app](https://www.instagram.com/useivory.app/)
+[Contact, support, and Instagram](https://useivory.app/info#contact)
 
 [Privacy policy](https://useivory.app/privacy)
 
@@ -66,5 +66,4 @@ These are future ideas being explored, not guaranteed release promises.
 
 - User guides and tips
 - Feature updates and roadmap notes through release notes
-- Feedback and contact channels
-- Main Instagram account: @useivory.app
+- Feedback and contact channels, including @useivory.app on Instagram
