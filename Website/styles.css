@@ -310,8 +310,8 @@ h3 {
 
 .button:hover {
     box-shadow:
-        0 0 0 1px rgba(var(--gold-rgb), 0.16),
-        0 12px 30px rgba(var(--orange-rgb), 0.16);
+        0 12px 30px rgba(var(--magenta-rgb), 0.14),
+        0 16px 34px rgba(var(--orange-rgb), 0.12);
     transform: translateY(-2px);
 }
 
@@ -321,13 +321,19 @@ h3 {
 
 .button.primary {
     background: var(--action-gradient);
-    background-clip: padding-box;
+    background-clip: border-box;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border-color: transparent;
+    border: 0;
     color: #fff8fc;
     text-shadow: var(--action-text-shadow);
+}
+
+.button.primary:hover {
+    box-shadow:
+        0 14px 32px rgba(var(--magenta-rgb), 0.18),
+        0 18px 42px rgba(var(--orange-rgb), 0.14);
 }
 
 .button.secondary {
