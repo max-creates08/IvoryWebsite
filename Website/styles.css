@@ -345,39 +345,6 @@ h3 {
     color: #fff;
 }
 
-.availability-strip {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
-    max-width: 780px;
-}
-
-.trust-strip {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 24px;
-    max-width: 860px;
-}
-
-.availability-strip span,
-.trust-strip span {
-    background: rgba(47, 58, 69, 0.08);
-    border: 1px solid var(--line);
-    border-radius: 999px;
-    color: var(--ink);
-    font-size: 0.9rem;
-    font-weight: 750;
-    padding: 8px 12px;
-}
-
-.trust-strip span {
-    background: rgba(47, 58, 69, 0.11);
-}
-
 .student-section {
     padding-top: 0;
 }
@@ -1581,11 +1548,6 @@ h3 {
     }
 
     .privacy-proof span {
-        background: rgba(238, 241, 243, 0.08);
-        color: #eef1f3;
-    }
-
-    .trust-strip span {
         background: rgba(238, 241, 243, 0.08);
         color: #eef1f3;
     }
