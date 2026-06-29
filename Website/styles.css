@@ -20,8 +20,12 @@
     --card: rgba(255, 255, 255, 0.84);
     --shadow: 0 18px 48px rgba(var(--indigo-rgb), 0.08);
     --shadow-lift: 0 26px 68px rgba(var(--magenta-rgb), 0.13);
-    --action-gradient: linear-gradient(135deg, var(--sunrise-indigo), var(--sunrise-violet) 52%, var(--sunrise-magenta));
-    --action-gradient-hover: linear-gradient(135deg, #24156f, #5a0477 52%, #a80465);
+    --action-gradient:
+        linear-gradient(135deg, rgba(9, 7, 18, 0.10), rgba(9, 7, 18, 0.46)),
+        linear-gradient(105deg, var(--sunrise-indigo) 0%, var(--sunrise-violet) 24%, var(--sunrise-magenta) 45%, var(--sunrise-red) 62%, var(--sunrise-orange) 78%, var(--sunrise-gold) 100%);
+    --action-gradient-hover:
+        linear-gradient(135deg, rgba(9, 7, 18, 0.16), rgba(9, 7, 18, 0.50)),
+        linear-gradient(105deg, #24156f 0%, #5a0477 24%, #a80465 45%, #c41422 62%, #cc4315 78%, #b9820d 100%);
     --sunrise-ribbon: linear-gradient(90deg, var(--sunrise-indigo), var(--sunrise-violet), var(--sunrise-magenta), var(--sunrise-red), var(--sunrise-orange), var(--sunrise-gold));
     --deep-panel: linear-gradient(145deg, #120c24, #1b0d3e 54%, #080611);
     --motion: 420ms cubic-bezier(0.2, 0.8, 0.2, 1);
@@ -184,7 +188,9 @@ a {
 
 .nav-links .nav-install:hover {
     background: var(--action-gradient-hover);
-    box-shadow: 0 8px 24px rgba(var(--magenta-rgb), 0.18);
+    box-shadow:
+        0 0 0 1px rgba(var(--gold-rgb), 0.18),
+        0 8px 24px rgba(var(--orange-rgb), 0.18);
     color: #fff8fc;
     transform: translateY(-6px);
 }
@@ -301,7 +307,9 @@ h3 {
 }
 
 .button:hover {
-    box-shadow: 0 12px 30px rgba(var(--magenta-rgb), 0.14);
+    box-shadow:
+        0 0 0 1px rgba(var(--gold-rgb), 0.16),
+        0 12px 30px rgba(var(--orange-rgb), 0.16);
     transform: translateY(-2px);
 }
 
@@ -960,7 +968,9 @@ h3 {
     align-items: center;
     background: var(--action-gradient);
     border-radius: 26px;
-    box-shadow: 0 16px 34px rgba(var(--magenta-rgb), 0.18);
+    box-shadow:
+        0 0 0 1px rgba(var(--gold-rgb), 0.16),
+        0 16px 34px rgba(var(--orange-rgb), 0.18);
     color: #fff8fc;
     display: inline-flex;
     font-size: 1.7rem;
@@ -1175,7 +1185,9 @@ h3 {
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 999px;
     bottom: 18px;
-    box-shadow: 0 18px 42px rgba(var(--magenta-rgb), 0.22);
+    box-shadow:
+        0 0 0 1px rgba(var(--gold-rgb), 0.18),
+        0 18px 42px rgba(var(--orange-rgb), 0.24);
     color: #fff8fc;
     display: none;
     font-weight: 850;
@@ -1195,7 +1207,9 @@ h3 {
 
 .sticky-install:hover {
     background: var(--action-gradient-hover);
-    box-shadow: 0 22px 52px rgba(var(--magenta-rgb), 0.28);
+    box-shadow:
+        0 0 0 1px rgba(var(--gold-rgb), 0.22),
+        0 22px 52px rgba(var(--orange-rgb), 0.30);
 }
 
 .motion-ready .hero > *,
