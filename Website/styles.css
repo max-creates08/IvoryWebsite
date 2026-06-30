@@ -783,22 +783,31 @@ h3 {
 .waveform {
     align-items: center;
     display: flex;
-    gap: 10px;
+    --waveform-bar-gap: 10px;
+    --waveform-bar-width: 12px;
+    --waveform-width: 122px;
+    gap: var(--waveform-bar-gap);
     margin-top: 76px;
+    width: var(--waveform-width);
 }
 
 .waveform span {
     animation: waveformPulse 1.55s ease-in-out infinite;
-    background: var(--sunrise-ribbon);
+    background-image: var(--sunrise-ribbon);
+    background-position: var(--waveform-bar-offset, 0) center;
+    background-repeat: no-repeat;
+    background-size: var(--waveform-width) 100%;
     border-radius: 999px;
     display: block;
     height: 54px;
     opacity: 0.86;
-    width: 12px;
+    transform-origin: center;
+    width: var(--waveform-bar-width);
 }
 
 .waveform span:nth-child(1) {
     animation-delay: 0ms;
+    --waveform-bar-offset: 0px;
 }
 
 .waveform span:nth-child(2),
@@ -807,18 +816,29 @@ h3 {
     height: 92px;
 }
 
+.waveform span:nth-child(2) {
+    --waveform-bar-offset: -22px;
+}
+
 .waveform span:nth-child(3) {
     animation-delay: 180ms;
     height: 128px;
+    --waveform-bar-offset: -44px;
 }
 
 .waveform span:nth-child(4) {
     animation-delay: 270ms;
     height: 74px;
+    --waveform-bar-offset: -66px;
+}
+
+.waveform span:nth-child(5) {
+    --waveform-bar-offset: -88px;
 }
 
 .waveform span:nth-child(6) {
     animation-delay: 360ms;
+    --waveform-bar-offset: -110px;
 }
 
 .privacy-proof {
@@ -1615,10 +1635,6 @@ h3 {
     .platform-icon {
         background: var(--action-gradient);
         color: #fff8fc;
-    }
-
-    .waveform span {
-        background: var(--sunrise-ribbon);
     }
 
     .privacy-proof span {
