@@ -386,23 +386,37 @@ h3 {
     color: #fff;
 }
 
-.product-hunt-badge {
-    display: inline-flex;
+.launch-badges {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
     margin-top: 22px;
-    max-width: 250px;
+}
+
+.launch-badge {
+    display: inline-flex;
     text-decoration: none;
     transition: opacity var(--motion), transform var(--motion);
 }
 
-.product-hunt-badge:hover {
+.launch-badge:hover {
     opacity: 0.9;
     transform: translateY(-2px);
 }
 
-.product-hunt-badge img {
+.launch-badge img {
     display: block;
     height: auto;
     max-width: 100%;
+}
+
+.product-hunt-badge {
+    max-width: 250px;
+}
+
+.startup-badge {
+    max-width: 212px;
 }
 
 .student-section {
@@ -1591,13 +1605,19 @@ h3 {
         width: 100%;
     }
 
-    .product-hunt-badge {
+    .launch-badges {
+        align-items: flex-start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .launch-badge {
         max-width: none;
         width: 100%;
     }
 
-    .product-hunt-badge picture,
-    .product-hunt-badge img {
+    .launch-badge picture,
+    .launch-badge img {
         width: 100%;
     }
 
