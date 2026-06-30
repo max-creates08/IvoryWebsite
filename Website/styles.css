@@ -386,6 +386,25 @@ h3 {
     color: #fff;
 }
 
+.product-hunt-badge {
+    display: inline-flex;
+    margin-top: 22px;
+    max-width: 250px;
+    text-decoration: none;
+    transition: opacity var(--motion), transform var(--motion);
+}
+
+.product-hunt-badge:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.product-hunt-badge img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
 .student-section {
     padding-top: 0;
 }
@@ -1292,6 +1311,10 @@ h3 {
     animation-delay: 360ms;
 }
 
+.motion-ready .hero > *:nth-child(6) {
+    animation-delay: 450ms;
+}
+
 .motion-ready .sticky-install {
     transform: translateY(0);
 }
@@ -1565,6 +1588,16 @@ h3 {
     }
 
     .actions {
+        width: 100%;
+    }
+
+    .product-hunt-badge {
+        max-width: none;
+        width: 100%;
+    }
+
+    .product-hunt-badge picture,
+    .product-hunt-badge img {
         width: 100%;
     }
 
